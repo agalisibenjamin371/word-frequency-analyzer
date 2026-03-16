@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Me Anything | Maestro 😉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <div class="glass-card">
+        <div id="form-ui">
+            <h1 class="page-title">Tell Me Anything</h1>
+            <div class="profile-container">
+                <img src="randy.jpg" alt="Maestro" class="profile-pic">
+                <h2 class="profile-name">Isaiah 😉</h2>
+                <div class="status-badge">ANONYMOUS MESSAGES</div>
+            </div>
+
+            <p class="sub-text">Encrypted. Anonymous. Fast. <br>Drop your messages below.</p>
+
+            <div class="input-wrapper">
+                <label>Name (optional)</label>
+                <div class="field-box">
+                    <input type="text" id="userName" placeholder="OPTIONAL">
+                </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label>Your Message</label>
+                <div class="field-box" id="msgBox">
+                    <textarea id="msg" placeholder="What's on your mind?"></textarea>
+                </div>
+                <div class="char-counter">
+                    <span id="charCount">0</span>/500
+                </div>
+            </div>
+
+            <div id="error-msg">⚠️ Message required</div>
+
+            <button class="btn-main" id="sendBtn" onclick="sendSecret()">Send Message</button>
+        </div>
+
+        <div id="success-state">
+            <div class="sent-icon">🚀</div>
+            <h2 class="success-title">Sent!</h2>
+            <p class="success-sub">Isaiah 😉 will receive this shortly.</p>
+            <button class="btn-reset" onclick="location.reload()">Send Another</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
