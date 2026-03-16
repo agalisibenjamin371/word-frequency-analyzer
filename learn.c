@@ -2,7 +2,8 @@
 int main(){
 
 int number;
-printf("Enter your nombr of choice  :");
+printf("my name is isaiah  :");
+    printf("Enter your nombr of choice  :");
 scanf("%d",&number);
 if (number%2==0)
 {
